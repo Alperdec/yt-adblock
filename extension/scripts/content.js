@@ -19,14 +19,8 @@ function updateAdBlockCount() {
         });
 
     chrome.runtime.sendMessage({ action: 'get', key }, res => {
-        console.log('session', res)
         const data = { [key]: res[key] + 1 }
-        console.log(data)
         chrome.runtime.sendMessage({ action: 'set', data })
-    });
-
-    chrome.runtime.sendMessage({ action: 'get', key }, res => {
-        console.log('post increment session: ', res)
     });
 }
 
