@@ -5,7 +5,7 @@
   "version": "1.0",
   "action": {
     "default_popup": "index.html",
-    "default_icon": "block.jpg"
+    "default_icon": "block.png"
   },
   "background": {
     "service_worker": "./scripts/service-worker.js"
